@@ -3,52 +3,47 @@ console.log("%c --- Debugging ---", "color: yellow");
 // let's do a syntax error
 //  L what is compilation? what is runtime? what is an interpreted language?
 
-if ("I am true" == true {
+if (!!"I am true" === true) {
   console.log("I am true!")
 }
 
+const raccoon = "Bob"
 
+// debugger
 
-// let's do a reference error
-//  L can we talk about things out of scope? that haven't been defined yet?
+console.log(raccoon)
 
+function returnSomething(something) {
+    console.log(something)
+    return something
+}
 
-
-// let's divide by zero
-
-
-
-// let's do a type error -> call a method on undefined...
-//  L first let's start with an array (of books maybe?)
-//  L let's not find something and then call a method on it
-//  L what is conditional chaining?
-
-// const library = [
-//   {
-//     title: "Crime and Punishment",
-//     author: "Fyodor Dostoevsky",
-//     editions: {
-//       first: "1886",
-//       second: "1887"
-//     }
-//   },
-//   {
-//     title: "A Wizard of Earthsea",
-//     author: "Ursula K LeGuin",
-//     editions: {
-//       first: "2004",
-//       second: "2012",
-//       third: "2015"
-//     }
-//   },
-//   {
-//     title: "Necronomicon",
-//     author: "Unknown",
-//     editions: {
-//       first: "Unknown"
-//     }
-//   }
-// ]
+const library = [
+  {
+    title: "Crime and Punishment",
+    author: "Fyodor Dostoevsky",
+    editions: {
+      first: "1886",
+      second: "1887"
+    }
+  },
+  {
+    title: "A Wizard of Earthsea",
+    author: "Ursula K LeGuin",
+    editions: {
+      first: "2004",
+      second: "2012",
+      third: "2015"
+    }
+  },
+  {
+    title: "Necronomicon",
+    author: "Unknown",
+    editions: {
+      first: "1886"
+    }
+  }
+]
 
 
 
