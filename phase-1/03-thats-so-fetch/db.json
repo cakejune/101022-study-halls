@@ -1,0 +1,14 @@
+{
+    "artists": [
+        {
+            "id": 1,
+            "name": "Herbie Hancock",
+            "instrument": "piano"
+        },
+        {
+            "id": 2,
+            "name": "Just Billy",
+            "instrument": "piano"
+        }
+    ] 
+}
