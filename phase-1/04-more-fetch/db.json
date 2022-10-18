@@ -1,3 +1,12 @@
 {
-  "something": []
+  "foods": [
+    {
+      "id": 1,
+      "name": "hargao"
+    },
+    {
+      "id": 2,
+      "name": "bumplings"
+    }
+  ]
 }
