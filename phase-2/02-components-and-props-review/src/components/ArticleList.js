@@ -1,15 +1,15 @@
 import React from 'react'
 
-function ArticleList({ prettyKitties, colour }) {
+function ArticleList({ articles, colour }) {
     
-    console.log(prettyKitties);
+    console.log("articles: ", articles);
 
     const articleStyle = { 
         colour,
         backgroundColor: "black"
     }
 
-    const articleComponents = prettyKitties.map( article => (
+    const articleComponents = articles.map( article => (
         <p key={article.id}>
             <span style={articleStyle}>Title: {article.title}</span>
         </p> 

@@ -15,7 +15,7 @@ function App() {
         foods={ ["pineapple", "pizza", "pineapple pizza"] } 
       />
 
-      <ArticleList prettyKitties={blogData.posts} colour="green" />
+      <ArticleList articles={blogData.posts} colour="green" />
 
     </div>
   );
