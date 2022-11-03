@@ -1,10 +1,13 @@
 import React from 'react'
 import CatCard from './CatCard'
 
-function CatCardsContainer({ catAlbumData }) {
+function CatCardsContainer({ catAlbumData, currentCat }) {
+
+  // take currentCat and only show cats that are the current cat
+  const currentCatImages = catAlbumData.filter( catElement => currentCat === 'All' || currentCat === catElement.name )
 
   // MAP CARDS //
-  const catImageCards = catAlbumData.map( catImage => (
+  const catImageCards = currentCatImages.map( catImage => (
     <CatCard
       key={catImage.id}
       name={catImage.name}

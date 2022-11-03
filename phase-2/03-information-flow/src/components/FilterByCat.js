@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FilterByCat() {
+function FilterByCat({ setCurrentCat }) {
 
   // RENDER //
   return (
@@ -10,9 +10,9 @@ function FilterByCat() {
 
       <br/>
 
-      <button onClick={() => console.log("Filter cats to see all cats")}>All</button>
-      <button onClick={() => console.log("Filter cats to see only Octavia")}>Octavia</button>
-      <button onClick={() => console.log("Filter cats to see only Ursula")}>Ursula</button>
+      <button onClick={() => setCurrentCat("All")}>All</button>
+      <button onClick={() => setCurrentCat("Octavia")}>Octavia</button>
+      <button onClick={() => setCurrentCat("Ursula")}>Ursula</button>
 
     </div>
   )
