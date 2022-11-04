@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&display=swap');
+
+/* --- STANDARD RULES --- */
+
+* {
+  text-align: center;
+}
+
+body {
+  background-color: #ABDDD4;
+}
+
+h1 {
+  background-color: #D8BCE2;
+  box-shadow: 2px 3px 5px #000A;
+  padding: 0.2em;
+}
+
+h1, h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
+p, button {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* --- CONTAINER RULES --- */
+
+div.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.filter-buttons {
+  background-color: #D8BCE2;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.filter-buttons button {
+  border: none;
+  border-radius: 3px;
+  background-color: #fff7;
+  margin: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+div.filter-buttons button:hover {
+  background-color: #fff;
+}
+
+/* --- CARD RULES --- */
+
+.cat-card img {
+  border: solid black 5px;
+  box-shadow: 3px 5px 5px #000A;
+  max-width: 400px;
+  transition: transform 0.2s;
+}
+
+.cat-card img:hover {
+  transform: rotate(5deg);
+}
+
+.cat-card p {
+  background-color: #D8BCE2;
+  box-shadow: 2px 3px 5px #000A;
+  padding: 1em;
+  width: 400px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* --- FORM RULES --- */
+
+form.new-cat-form {
+  background-color: #D8BCE2;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/*
+form.new-cat-form input, form.new-cat-form label {
+  text-align: left;
+} */
