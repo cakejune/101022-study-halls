@@ -1,9 +1,8 @@
-# Information Flow
+# Controlled Components
 
 By the end of this study hall you should be able to:
 
-- Utilize state in components
-- Change state with events
-- Explain the difference between state and props
-- Send state as a prop
-- Send a callback as a prop to that changes its parent's state
+- Explain the difference between an uncontrolled and controlled component
+- Explain how we can use two way binding to explain a controlled component
+- Build a controlled form that submits
+- Add a new element to an array in state
