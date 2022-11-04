@@ -1,0 +1,9 @@
+{
+  "short_name": "Cat Photo Album",
+  "name": "Cat Photo Album Lecture",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

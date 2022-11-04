@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import NewCatForm from './NewCatForm'
 import FilterByCat from './FilterByCat'
 import CatCardsContainer from './CatCardsContainer'
 import { catAlbumData } from "../data/catAlbumData"
 
 function App() {
 
+  const [catsArray, setCatsArray] = useState(catAlbumData)
   const [currentCat, setCurrentCat] = useState('All')
 
   console.log("currentCat: ", currentCat)
@@ -16,7 +18,9 @@ function App() {
 
       <FilterByCat setCurrentCat={ setCurrentCat } />
 
-      <CatCardsContainer catAlbumData={ catAlbumData } currentCat={currentCat} />
+      <CatCardsContainer catsArray={ catsArray } currentCat={currentCat} />
+
+      <NewCatForm />
     </>
   )
 

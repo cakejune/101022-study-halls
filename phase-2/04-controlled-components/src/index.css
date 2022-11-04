@@ -20,7 +20,7 @@ h1, h2 {
   font-family: 'Dancing Script', cursive;
 }
 
-p {
+p, button {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -30,6 +30,24 @@ div.flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+div.filter-buttons {
+  background-color: #D8BCE2;
+  font-family: 'Oswald', sans-serif;
+}
+
+div.filter-buttons button {
+  border: none;
+  border-radius: 3px;
+  background-color: #fff7;
+  margin: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+div.filter-buttons button:hover {
+  background-color: #fff;
 }
 
 /* --- CARD RULES --- */
@@ -51,3 +69,24 @@ div.flex {
   padding: 1em;
   width: 400px;
 }
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* --- FORM RULES --- */
+
+form.new-cat-form {
+  background-color: #D8BCE2;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/*
+form.new-cat-form input, form.new-cat-form label {
+  text-align: left;
+} */
